@@ -11,9 +11,9 @@ const CarsList = (props) => {
       <FlatList
         data={cars}
         renderItem={({item}) => <CarItem car={item} />}
-        showsVerticalScrollIndicator={false}
-        snapToAlignment={'start'}
-        decelerationRate={'fast'}
+        showsVerticalScrollIndicator={false} // hides the scrolling indicator on the right of the page.
+        snapToAlignment={'start'}  // takes to the start of the next component
+        decelerationRate={'normal'} // speed of scrolling.
         snapToInterval={Dimensions.get('window').height}
       />
     </View>
